@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-danger"> <!--navbar-expand-lg:large ekran demek laptop ve masaüstü icin. mg:ise midium ekran tabletler icin. sg: ise small ekran telefonlar icin oluyor ÖNEMLI BILGI:-->
+        <a href="#" class="navbar-brand text-dark">Navbar</a> <!-- navbar-brand demek marka ismi olan en solda yer alan ismi farkli sekilde navbardaki diger yazilardan bira daha büyük yazilmasina yardimci oluyor.-->
+        <button class="navbar-toggler"type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false" aria-controls="#navbarSupportedContent" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!--yukaridaki özellik menu acma özelligini 3cizgi getiriyor.-->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><!--nav-item active ilgili tusun aktif görunmesini sagliyor.-->
+                    <a class="nav-link text-dark" href="#">Home</a> <!--nav-link özelligi ile Home yazisi beyaz yazdirdik. digerlerinden daha cok ön plana cikti.-->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#">Link</a> <!--burada verilen nav-link ile yazi gri oldu -->
+                </li>
+                <li class="nav-item dropdown text-dark">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false" href="#">Dropdown</a>
+                    <!--burada nav-link dropdown-toggle yaparak tiklayarak altinda sayfa acilan bir buton özelligi olusturmak istiyoruz.devamin daki href e kadar olan bölüm id vererek ic baglantisini saglayarak dropdown icinde yer alacak alt basliklari saklamak ve onun icinde dizaqyn etmek icin yazildi.-->
+                    <div class="dropdown-menu bg-warning" aria-labelledby="navbarDropdown"> <!--yukaridaki verdigimiz id ismi ile baglanti kurduk. böylece bu bölüm ile menü olustu -->
+                        <a class="dropdown-item" href="">Action</a>
+                        <a class="dropdown-item" href="">Another Action</a>
+                        <div class="dropdown-divider"></div> <!--divider özelligi ile <hr>nin verdigi cizgi cekme özelkligini vermis oluyoruz.-->
+                        <a href="" class="dropdown-item">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link disabled">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-lg-0 my-2" action="">
+                <input class="form-control mr-sm-2 "type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-info bg-warning my-2 my-sm-0 " type="submit">Search</button>
+            </form>
+
+
+        </div>
+
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+</body>
+</html>
